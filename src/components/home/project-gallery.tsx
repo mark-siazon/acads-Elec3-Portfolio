@@ -1,4 +1,4 @@
-import { component$, useSignal, $, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, useSignal, $ } from '@builder.io/qwik';
 import ProjectCard from '../project-card/project-card';
 import ProjectModal from '../project-modal/project-modal';
 import { projects } from '../../data/projects';
