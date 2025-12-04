@@ -1,10 +1,13 @@
+// Use Vite's base URL for asset paths
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
 export const projects = [
     {
         title: 'Ass#1: Spring Boot RESTful Web Services',
         description: 'A comprehensive User Management REST API with layered architecture, MySQL integration, and Postman testing.',
         tags: ['Java SpringBoot', 'REST API', 'MySQL', 'Postman'],
-        pdf: '/files/Project-Ass-1.pdf',
-        image: '/card-img/Project-Ass-1.webp',
+        pdf: `${BASE_URL}files/Project-Ass-1.pdf`,
+        image: `${BASE_URL}card-img/Project-Ass-1.webp`,
         fullDescription: `
         Developed a comprehensive User Management REST API using Spring Boot and MySQL.
         The project implements a standard layered architecture (Controller, Service, Repository) to handle CRUD operations for user data.
@@ -19,8 +22,8 @@ export const projects = [
         title: 'Ass#2: AWS Deployment Guide',
         description: 'A comprehensive guide for setting up a website hosting project using key AWS services like EC2, S3, and RDS.',
         tags: ['AWS', 'EC2', 'S3', 'RDS', 'Cloud Hosting'],
-        pdf: '/files/Project-Ass-2.pdf',
-        image: '/card-img/Project-Ass-2.webp',
+        pdf: `${BASE_URL}files/Project-Ass-2.pdf`,
+        image: `${BASE_URL}card-img/Project-Ass-2.webp`,
         fullDescription: `
         A step-by-step guide for deploying a simple website on AWS, mirroring real-world cloud practices.
         This project demonstrates the integration of core AWS services to build a scalable and secure hosting environment.
@@ -36,8 +39,8 @@ export const projects = [
         title: 'Ass#3: Intro to Docker & Containerization',
         description: 'A comprehensive two-week learning plan covering Docker fundamentals, multi-container applications, and best practices.',
         tags: ['Docker', 'Containerization', 'DevOps', 'Learning Plan'],
-        pdf: '/files/Project-Ass-3.pdf',
-        image: '/card-img/Project-Ass-3.svg',
+        pdf: `${BASE_URL}files/Project-Ass-3.pdf`,
+        image: `${BASE_URL}card-img/Project-Ass-3.svg`,
         fullDescription: `
         A structured two-week curriculum designed to master Docker fundamentals and containerization best practices.
         The plan progresses from running basic containers to building and deploying multi-container applications.
@@ -54,7 +57,7 @@ export const projects = [
         tags: ['Docker', 'Node.js', 'Containerization', 'Docker Compose'],
         github: 'https://github.com/Iron-Mark/Elec3-Docker',
         local: true,
-        image: '/card-img/Project-LabAct.webp',
+        image: `${BASE_URL}card-img/Project-LabAct.webp`,
         fullDescription: `
         A hands-on lab activity demonstrating the fundamentals of containerizing a web application.
         The project uses a simple Node.js app to showcase the Docker lifecycle: building images, running containers, and managing services with Docker Compose.
@@ -69,8 +72,8 @@ export const projects = [
         title: 'Ass#4: Narrative Report - Virtualization vs. Containerization',
         description: 'A comparative analysis of Virtual Machines and Docker containers in Edge Computing environments.',
         tags: ['Research', 'Virtualization', 'Docker', 'Edge Computing'],
-        pdf: '/files/Project-Ass-4.pdf',
-        image: '/card-img/Project-Ass-4.webp',
+        pdf: `${BASE_URL}files/Project-Ass-4.pdf`,
+        image: `${BASE_URL}card-img/Project-Ass-4.webp`,
         fullDescription: `
         A critical review of the research article "Virtualization vs. Containerization... Focused on the Edge".
         The report evaluates the performance and efficiency of VMs vs. Docker in resource-constrained environments.
@@ -90,8 +93,8 @@ export const projects = [
         title: 'Ass#5: Kubernetes Home Lab Activity',
         description: 'Hands-on container orchestration using Minikube: Deployments, Services, Debugging, and Stateful Apps.',
         tags: ['Kubernetes', 'Minikube', 'MySQL', 'WordPress', 'PVC', 'Secrets'],
-        pdf: '/files/Project-Ass-5.pdf',
-        image: '/card-img/Project-Ass-5.webp',
+        pdf: `${BASE_URL}files/Project-Ass-5.pdf`,
+        image: `${BASE_URL}card-img/Project-Ass-5.webp`,
         fullDescription: `
         A comprehensive hands-on lab focused on deploying and managing applications with Kubernetes (Minikube).
         The project covers three key practical tutorials demonstrating core orchestration skills.
@@ -108,7 +111,7 @@ export const projects = [
         tags: ['Terraform', 'Game Dev', 'IaC', 'GitHub Actions'],
         github: 'https://github.com/mark-siazon/acads-Terraform_Survivor-ELEC5',
         demo: 'https://mark-siazon.github.io/acads-Terraform_Survivor-ELEC5/',
-        image: '/card-img/Project-Ass-6.svg',
+        image: `${BASE_URL}card-img/Project-Ass-6.svg`,
         fullDescription: `
         Infrastructure as Code meets Survival RPG. This project demonstrates clean architecture and IaC principles by using Terraform to control game mechanics.
 
